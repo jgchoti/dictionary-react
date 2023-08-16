@@ -1,4 +1,5 @@
-import Dictionary from "./Dictionary.js"
+import Dictionary from "./Dictionary"
+import Footer from "./Footer"
 import './App.css';
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div className="App">
       <h1> English Dictionary </h1>
       <Dictionary defaultKeyword="Dictionary" />
+      <Footer />
     </div>
   );
 }
