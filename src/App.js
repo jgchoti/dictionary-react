@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Dictionary from "./Dictionary";
+import DinoGame from "react-chrome-dino-ts";
+import "react-chrome-dino-ts/index.css";
 import "./App.css";
 
 export default function App() {
@@ -68,11 +70,11 @@ export default function App() {
     <div className="App">
       <h1>English Dictionary</h1>
       <div className="row">
-        <div className="col-2">
+        <div className="col-3">
           <button
             type="button"
             onClick={handleRandomWord}
-            className="SearchButton"
+            className="RandomButton"
           >
             Random
           </button>
@@ -98,6 +100,7 @@ export default function App() {
         </div>
       </div>
       {result.showResult && <Dictionary data={result} />}
+      <DinoGame />
     </div>
   );
 }
