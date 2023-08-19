@@ -3,7 +3,7 @@
 
 .Dictionary .subHeading h2 {
   font-family: "Press Start 2P", cursive;
-  margin: 25px auto;
+  margin: 40px auto;
   text-transform: Capitalize;
   color: #051937;
 }
@@ -33,4 +33,6 @@
   font-weight: bolder;
   font-style: italic;
   color: #004d7a;
+}
+@media screen and (max-width: 540px) {
 }
