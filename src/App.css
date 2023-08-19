@@ -1,3 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
 .App {
   text-align: center;
+  background-image: linear-gradient(
+    to bottom,
+    #051937,
+    #373d56,
+    #646578,
+    #92919b,
+    #c0c0c0
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #564d6f;
+  max-width: 800px;
+  font-family: "Roboto", sans-serif;
+}
+
+.App h1 {
+  font-family: "Press Start 2P", cursive;
+  color: #c0c0c0;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+.App .RandomButton,
+.App .SearchButton {
+  display: inline-block;
+  padding: 10px 20px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 16px;
+  background-color: #051937;
+  color: #ddeb12;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.App .RandomButton:hover,
+.App .SearchButton:hover {
+  background-color: #004d7a;
+  color: #bfbf00;
+}
+.App .RandomButton {
+  padding: 10px 10px;
+}
+
+.App input {
+  padding: 20px auto;
+  font-size: 18px;
+}
+@media screen and (max-width: 540px) {
+  .App h1 {
+    margin-bottom: 20px;
+  }
+  .App .RandomButton,
+  .App .SearchButton {
+    padding: 15px 5px;
+    font-size: 12px;
+  }
+  .App input {
+    padding: 10px 15px;
+  }
 }
