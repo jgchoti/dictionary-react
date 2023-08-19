@@ -7,7 +7,7 @@ export default function Footer() {
     return (
         <div className="Footer">
             <a
-                href="https://github.com/jgchoti/weather-react"
+                href="https://github.com/jgchoti/dictionary-react"
                 target="_blank"
                 rel="noopener noreferrer"
             >
