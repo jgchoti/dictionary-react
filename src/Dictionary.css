@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+.Dictionary .subHeading h2 {
+  font-family: "Press Start 2P", cursive;
+  margin: 25px auto;
+  text-transform: Capitalize;
+  color: #051937;
+}
+.Dictionary .phoneticContainer h3 {
+  font-family: "Roboto", sans-serif;
+  margin: 20px auto;
+}
+
+.Dictionary .meaningContainer ul {
+  padding: 0;
+  list-style: none;
+}
+.Dictionary .meaningContainer .partOfSpeech {
+  font-family: "Roboto", sans-serif;
+  font-size: 26px;
+  font-weight: bolder;
+}
+.Dictionary .meaningContainer .definition {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  line-height: 48px;
+}
+.Dictionary .meaningContainer .example {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: bolder;
+  font-style: italic;
+  color: #004d7a;
+}
