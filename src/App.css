@@ -58,9 +58,6 @@
 }
 @media screen and (max-width: 540px) {
   .App h1 {
-    margin-bottom: 20px;
-  }
-  .App h1 {
     font-size: 25px;
   }
   .App .RandomButton,
