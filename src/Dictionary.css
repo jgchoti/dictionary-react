@@ -4,35 +4,49 @@
 .Dictionary .subHeading h2 {
   font-family: "Press Start 2P", cursive;
   margin: 40px auto;
-  text-transform: Capitalize;
+  text-transform: capitalize;
   color: #051937;
 }
+
 .Dictionary .phoneticContainer h3 {
   font-family: "Roboto", sans-serif;
-  margin: 20px auto;
+  margin: 26px auto;
 }
 
 .Dictionary .meaningContainer ul {
   padding: 0;
   list-style: none;
 }
-.Dictionary .meaningContainer .partOfSpeech {
-  font-family: "Roboto", sans-serif;
-  font-size: 26px;
-  font-weight: bolder;
-}
-.Dictionary .meaningContainer .definition {
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  font-weight: bolder;
-  line-height: 48px;
-}
+
+.Dictionary .meaningContainer .partOfSpeech,
+.Dictionary .meaningContainer .definition,
 .Dictionary .meaningContainer .example {
   font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.Dictionary .meaningContainer .partOfSpeech {
+  font-size: 26px;
+}
+
+.Dictionary .meaningContainer .definition {
+  font-size: 20px;
+}
+
+.Dictionary .meaningContainer .example {
   font-size: 18px;
-  font-weight: bolder;
   font-style: italic;
   color: #004d7a;
 }
+
 @media screen and (max-width: 540px) {
+  .Dictionary .meaningContainer .partOfSpeech,
+  .Dictionary .meaningContainer .definition {
+    font-size: 20px;
+  }
+
+  .Dictionary .meaningContainer .example {
+    font-size: 18px;
+  }
 }
