@@ -1,13 +1,17 @@
 import React, { useEffect, useRef } from "react";
 
+import "./Dictionary.css";
+
 export default function Dictionary(props) {
   const audioRef = useRef(null);
   function generateMeanings(meaning, index) {
     return (
       <ul key={index}>
-        <li>{meaning.partOfSpeech}</li>
-        <li>{meaning.definition}</li>
-        <li>{meaning.example}</li>
+        <li className="partOfSpeech">({meaning.partOfSpeech})</li>
+        <li className="definition">{meaning.definition}</li>
+        {meaning.example && (
+          <li className="example">Example : {meaning.example}</li>
+        )}
       </ul>
     );
   }
@@ -26,10 +30,10 @@ export default function Dictionary(props) {
       </div>
       <div className="phoneticContainer">
         <h3>{props.data.phonetic}</h3>
-        {props.data.phonetic && (
+        {props.data.audio && (
           <audio controls>
             <source
-              key={props.data.word}
+              key={props.data.audio}
               src={props.data.audio}
               type="audio/mpeg"
             />
