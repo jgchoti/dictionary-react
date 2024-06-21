@@ -1,17 +1,11 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Dictionary from "./Dictionary";
-import "react-chrome-dino-ts/index.css";
 import "./App.css";
 
 export default function App() {
   const [submittedWord, setSubmittedWord] = useState("");
   const [result, setResult] = useState({});
-  const [showDinoGame, setShowDinoGame] = useState(true);
-
-  useEffect(() => {
-    setShowDinoGame(false);
-  }, []);
 
   function handleError() {
     alert(
@@ -64,7 +58,6 @@ export default function App() {
   function handleSubmit(event) {
     event.preventDefault();
     fetchWordDefinitions(submittedWord);
-    setShowDinoGame(true)
   }
 
   function updateWord(event) {
