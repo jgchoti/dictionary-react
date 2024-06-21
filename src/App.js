@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Dictionary from "./Dictionary";
-import ChromeDinoGame from 'react-chrome-dino';
 import "react-chrome-dino-ts/index.css";
 import "./App.css";
 
@@ -106,7 +105,6 @@ export default function App() {
         </div>
       </div>
       {result.showResult && <Dictionary data={result} />}
-      {showDinoGame && <ChromeDinoGame />}
     </div>
   );
 }
